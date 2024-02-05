@@ -1,4 +1,4 @@
-import { ElementChangeEvent, listenForChanges, waitForAvailable } from './element_available'
+import { listenForChanges, waitForAvailable } from './watchers'
 
 // @ts-ignore
 const $ = (...args: any[]) => document.querySelector.apply(document, args) as HTMLElement
