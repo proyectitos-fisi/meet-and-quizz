@@ -4,8 +4,6 @@ import { ElementChangeEvent, listenForChanges, waitForAvailable } from './elemen
 const $ = (...args: any[]) => document.querySelector.apply(document, args) as HTMLElement
 const CHAT_CONTAINER_SELECTOR = 'div.z38b6'
 
-const MESSAGE_BOX_CLASS = 'div.Ss4fHf'
-
 const MESSAGE_USER_CLASS = 'poVWob' // means new message from user
 const MESSAGE_TIMESTAMP_CLASS = 'MuzmKe'
 const MESSAGE_TEXT_CLASS = 'er6Kjc'
