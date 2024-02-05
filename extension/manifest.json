@@ -1,0 +1,28 @@
+{
+  "name": "Meet and quizz!",
+  "version": "0.0.1",
+  "manifest_version": 3,
+  "description": "Meet and quizz official extension",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://meet.google.com/*"
+      ],
+      "js": [
+        "injector.js"
+      ],
+      "css": [
+        "styles.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["dist/main.js"],
+    "matches": ["https://meet.google.com/*"]
+  }],
+
+  "permissions": [
+    "tabs"
+  ]
+}
